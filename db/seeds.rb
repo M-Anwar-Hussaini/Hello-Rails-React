@@ -1,0 +1,5 @@
+Greeting.create(message: 'Hello')
+Greeting.create(message: 'Good morning')
+Greeting.create(message: 'Good noon')
+Greeting.create(message: 'Good afternoon')
+Greeting.create(message: 'Good night')
