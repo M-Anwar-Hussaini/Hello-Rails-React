@@ -12,11 +12,14 @@ const greetingSlice = createSlice({
   }, extraReducers: (builder) => {
     builder.addCase(getGreeting.pending, (state) => {
       state.status = 'loading'
+      console.log('pending')
     }).addCase(getGreeting.fulfilled, (state, action) => {
       state.status = 'succeeded';
+      console.log('done')
       state.greeting = action.payload;
     }).addCase(getGreeting.rejected, (state, action) => {
       state.status = 'failed';
+      console.log('failed')
       state.greeting = action.error.message;
     })
   }
